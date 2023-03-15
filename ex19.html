@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="urf-8">
+        <title>css 연습</title>
+    </head>
+    <body>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+            }
+            .box1 {
+                background-color: gold;
+                /* 
+                transition-property: 'width';
+                transition-property: 'height';
+                transition-delay: 2s;
+                transition-duration: 1.5s;
+                transition-timing-function: ease-in-out; 
+                */
+                transition: all 0.7s ease-in-out 0.1s;
+                /* property duration timing-function delay 순서대로 단축 */
+            }
+            .box1:active {
+                width: 300px;
+                height: 15px;
+                transform: rotate(180deg);
+            }
+        </style>
+       <div class="box box1"></div> 
+    </body>
+</html>

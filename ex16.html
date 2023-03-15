@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="urf-8">
+        <title>css 연습</title>
+    </head>
+    <body>
+        <style>
+            body {
+                margin: 0;
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                
+            }
+            ul::after {
+                content: '';
+                clear: left;
+                display: block;
+            }
+            li {
+                width: 50%;
+                /* 50%로 설정하고 float 속성을 넣어서 두 개의 단으로 보이게했다. */
+                height: 400px;
+                float: left;
+            }
+            li:nth-of-type(1) {
+                background-color: gray;
+            }
+            li:nth-of-type(2) {
+                background-color: pink;
+            }
+            li:nth-of-type(3) {
+                background-color: gold;
+            }
+            li:nth-of-type(4) {
+                background-color: blue
+            }
+
+            @media all and (max-width: 740px) {
+                li {
+                    width: 100%
+                }
+            }
+        </style>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="urf-8">
+        <title>css 연습</title>
+    </head>
+    <body>
+        <style>
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+            li {
+                margin: 0;
+            }
+            li:nth-of-type(1) {
+                background-color: gray;
+                width: 0;
+                flex-grow: 1;
+            }
+            li:nth-of-type(2) {
+                background-color: yellow;
+                width: 0;
+                flex-grow: 1;
+            }
+            li:nth-of-type(3) {
+                background-color: red;
+                width: 0;
+                flex-grow: 1;
+            }
+        </style>
+        <ul>
+            <li>왼쪽메뉴</li>
+            <li>가운데메뉴</li>
+            <li>오른쪽메뉴</li>
+        </ul>
+    </body>
+</html>

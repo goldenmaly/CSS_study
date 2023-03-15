@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="urf-8">
+        <title>css 연습</title>
+
+    </head>
+    <body>
+        <style>
+            ol li {
+                background-color: gray;
+            }
+            span {
+                background-color: gold;
+            }
+            li:first-child {
+                background-color: black;
+            }
+            ol li > ul li {
+                background-color: blue;
+            }
+        </style>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+            <li>메뉴5</li>
+        </ul>
+        <ol>
+            <li>
+                <span>메뉴1</span>
+                <ul>
+                    <li>서브메뉴1</li>
+                    <li>서브메뉴2</li>
+                    <li>서브메뉴3</li>
+                </ul>
+            </li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+            <li>메뉴5</li>
+        </ol>
+    </body>
+
+</html>

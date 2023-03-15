@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="urf-8">
+        <title>css 연습</title>
+    </head>
+    <body>
+        <style>
+            .menu {
+                width: 100px;
+                height: 50px;
+                background-color: gray;
+                float: left;
+            }
+            .article {
+                background: gold;
+                
+            }
+            #wrap::after {
+                display: block;
+                /* 가상요소는 inline level이기 때문에 추가한 속성이다. */
+                clear: left;
+                content: '';
+            } 
+        </style>
+        <div id="wrap">
+        <div class="menu">menu1</div>
+        <div class="menu">menu2</div>
+        <div class="menu">menu3</div>
+        <div class="menu">menu4</div>
+        <!-- <div style="clear: left;"></div> -->
+        </div>
+        <div class="article">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, expedita sapiente. Labore quis, quos voluptas atque totam nam minima laudantium iusto ullam quaerat libero tempora nostrum asperiores natus modi quam!
+        </div>
+</html>

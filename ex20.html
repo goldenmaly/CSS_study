@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="urf-8">
+        <title>css 연습</title>
+    </head>
+    <body>
+        <style>
+            body {
+                margin: 0;
+            }
+            .ul1 {
+                border: 1px solid red;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                /* flex-direction: row-reverse; */
+                /* flex-direction: column-reverse; */
+                /* flex-direcrtion: 기본값: row; */
+                height: 50px;
+                /* align-items: flex-start; */
+                /* align-items: center; */
+                align-items: flex-end;
+                justify-content: center;
+            }
+            li {
+                background-color: gold;
+            }
+            .ul2 {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                justify-content: space-between;
+            }
+            .ul3 {
+                display: flex;
+                justify-content: space-around;
+            }
+            .ul4 {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        </style>
+        <ul class="ul1">
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+        <h1 style="text-align: center;">space-between</h1>
+        <ul class="ul2">
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+        <h1> space-around</h1>
+        <ul class="ul3">
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+        <h1>space-evenly</h1>
+        <ul class="ul4">
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+        </ul>
+    </body>
+</html>

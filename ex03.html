@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="urf-8">
+        <title>css 연습</title>
+    </head>
+    <body>
+        <style>
+            /* 
+            #menu5~li {
+                color: blue; 
+            } 
+            */
+            /* #menu5는 선택되지 않는다. */
+
+            /*
+             #menu5+li {
+                color: red;
+            } 
+            */
+            /* 
+            ul li:first-child { 
+                color: rgb(13, 155, 180);
+            }
+            ul li:last-child {
+                color: red;
+            } 
+            */
+            /* ul li:nth-child(1),
+            ul li:nth-child(3),
+            ul li:nth-child(5) {
+                color: orange;
+            } */
+            /* 
+            ul li:nth-child(even) {
+                background-color: gold;
+            }
+            ul li:nth-child(odd) {
+                background-color: green;
+            }
+            ul li:nth-child(3n+1) {
+                font-size: 1.5em;
+            } 
+            */
+            /*
+             li:not(.special) {
+                background-color: orange;
+            } 
+            */
+            ul:before {
+                content: "before";
+            }
+            ul:after {
+                content: "after";
+            }
+        </style>
+        <ul>
+            <li>메뉴1</li>
+            <li>메뉴2</li>
+            <li>메뉴3</li>
+            <li>메뉴4</li>
+            <li id="menu5">메뉴5</li>
+            <li class="special">메뉴6</li>
+            <li>메뉴7</li>
+            <li>메뉴8</li>
+            <li>메뉴9</li>
+            <li>메뉴10</li>
+        </ul>
+    </body>
+</html>
