@@ -1,0 +1,17 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+div {
+    background-color: gold;
+    width: 500px;
+    height: 500px;
+    border: 10px solid red;
+    padding: 5%;
+}
+div::after {
+    content: "l::L";
+    font-size: 4em;
+}

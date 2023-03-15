@@ -1,0 +1,15 @@
+*{
+    color: red;
+}
+[for] {
+    background-color: gold;
+}
+[type="text"] { /* [type=text] 혹은 [type='text' */
+    background-color: black;
+}
+[id=user-id] {
+    background-color: aqua;
+}
+#user-id {
+    border : 10px solid red;
+}

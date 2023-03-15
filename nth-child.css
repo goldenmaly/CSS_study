@@ -1,0 +1,53 @@
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px 30px;
+}
+.gallery-item {
+    border: 1px solid silver;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.gallery-item::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 5000px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 0.7em;
+}
+li:nth-child(3) {
+    border-color: red;
+}
+li:nth-child(2n) {
+    /* 
+    짝수 : even 
+    홀수 : odd 
+    */
+    color: blue;
+}
+li:nth-child(2n-1) {
+   /*2n+1 도 홀수로 처리됨*/
+   color: green;
+}
+li:nth-child(even) {
+    font-size: 3em;
+}
+li:nth-child(odd) {
+    font-style: italic;
+}
+li:nth-child(5n-2):hover {
+    background-color: gold;
+}

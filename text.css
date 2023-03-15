@@ -1,0 +1,66 @@
+/*
+ * 기본값(default value): normal(0px=>0)
+ 
+ * css에서 값이 0px 등 0일 경우 단위를 생략함
+ * 예외=> s, ms 등 시간단위는 반드시 작성해야함
+*/
+.letter-spacing-1 {
+    letter-spacing: 15px;
+}
+.letter-spacing-2 {
+    letter-spacing: -2px;
+}
+.letter-spacing-3 {
+    font-size: 100px;
+    letter-spacing: .2em;
+    /* = 10px */
+}
+.letter-spacing-4 {
+    font-size: 100px;
+    letter-spacing: -.1em;
+    /* = -10px */
+}
+.letter-spacing-5 {
+    font-size: 100px;
+    letter-spacing: -.049em; 
+}
+
+/*
+ * # em단위
+ * font-size에 사용할 경우 : 부모요소의 글자크기가 1em이 된다.
+ * font-size를 제외한 모든 길이단위에 사용할 경우 : 현재요소의 글자크기가 1em이 된다.
+*/
+
+.text-align-1 {
+    text-align: center;
+}
+.text-align-2 {
+    text-align: right;
+}
+.text-align-3 {
+    text-align: left;
+}
+.text-align-4 {
+    text-align: justify;
+}
+.text-align-5 {
+    text-align: start; /* default value */
+}
+.text-align-6 {
+    font-size: 1.5em;
+    text-align: justify;
+    line-height: 1.6;
+    /* 
+    줄바꿈 할 때 양쪽정렬해줌 
+    한국어는 자주 사용하는편이지만, 단어위주의 언어인 영어에서는 거의 쓰지 않는다.
+    */
+}
+.text-align-7 {
+    text-align: center;
+}
+a[href] {
+    text-decoration: none;
+}
+a:hover {
+    border: 2px solid red;
+}

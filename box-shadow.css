@@ -1,0 +1,87 @@
+/* pre-settings */
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 100;
+	src: url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),
+		 url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff');
+}
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Source Code Pro Light'), local('SourceCodePro-Light'), url(https://fonts.gstatic.com/s/sourcecodepro/v6/leqv3v-yTsJNC7nFznSMqTRVvBvQIc1z78c__uoBcyI.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Source Code Pro Light'), local('SourceCodePro-Light'), url(https://fonts.gstatic.com/s/sourcecodepro/v6/leqv3v-yTsJNC7nFznSMqeode0-EuMkY--TSyExeINg.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+body {
+	font-family: 'Noto Sans KR';
+}
+figure {
+	margin: 0 auto 50px;
+	width: 900px;
+}
+figcaption {
+	font-family: 'Source Code Pro';
+	font-weight: 300;
+	line-height: 100px;
+	text-align: center;
+}
+.shadow {
+	width: 300px;
+	height: 300px;
+	background-color: #f0f0f0;
+	margin: auto;
+	text-align: center;
+}
+.shadow span {
+	line-height: 300px;
+	font-size: 20px;
+	font-weight: 100;
+	color: #000;
+}
+
+/* box shadow
+ *
+ * box-shadow: none|h-shadow v-shadow blur spread color |inset|initial|inherit;
+ */
+.shadow-1 {
+	box-shadow: 10px 10px black;
+}
+.shadow-2 {
+	box-shadow: 15px 15px black;
+}
+.shadow-3 {
+	box-shadow: 15px 15px 3px black;
+}
+.shadow-4 {
+	box-shadow: 15px 15px 15px black;
+}
+.shadow-5 {
+	box-shadow: 15px 15px 15px 5px black;
+}
+.shadow-6 {
+	box-shadow: 15px 15px 15px 15px black;
+}
+.shadow-7 {
+	box-shadow: -15px 15px 15px 15px black;
+}
+.shadow-8 {
+	box-shadow: -15px -15px 15px 15px black;
+}
+.shadow-9 {
+	box-shadow: 10px 10px black, /* shadow layer가 가장 위 */
+				20px 20px 5px blue,  /* shadow layer가 그 다음 순 아래로 쌓임을 명심하라 => text-shadow도 동일함 */
+				30px 30px 5px red;
+}
+.shadow-10 {
+	box-shadow: 15px 15px 3px black,
+				0 0 60px 60px blue inset; /* inset 0 0 60px 60px blue 처럼 inset은 맨 앞이나 뒤에 지정할 수 있음 */
+}

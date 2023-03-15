@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Multi Background Image</title>
+		<style>
+			.box {
+				width: 500px;
+				height: 300px;
+				margin: 0 auto 30px;
+			}
+			.box-1 {
+				background-image: url("shoes.png"), url("paper.jpg"); /* 왼쪽 순서대로 이미지가 위로 올라간다. */
+				background-position: right bottom, center;
+				background-repeat: no-repeat, repeat;
+				background-size: 40%, cover;
+			}
+
+			/* background 단축속성으로 사용할 경우 */
+			.box-2 {
+				background: url("shoes.png") no-repeat right bottom, url("paper.jpg") repeat center;
+				background-size: 40%, cover;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box box-1"></div>
+		<div class="box box-2"></div>
+	</body>
+</html>

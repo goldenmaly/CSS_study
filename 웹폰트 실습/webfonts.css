@@ -1,0 +1,50 @@
+/* web fonts
+*********************************************/
+
+/*
+ * Nanum Gothic (Korean) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+	font-family: "Nanum Gothic";
+	src: local("Nanum Gothic"),
+	     url("fonts/NanumGothic/NanumGothic-Regular.woff2") format("woff2"), /* 680KB */
+		 url("fonts/NanumGothic/NanumGothic-Regular.woff") format("woff"), /* 953KB */
+		 url("fonts/NanumGothic/NanumGothic-Regular.ttf") format("truetype"); /* 2,315KB(권장하지 않음) */
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face { /* 사용전 후의 .nanum-gothic h2글꼴을 보라 사용 후 더 선명하다. */
+	font-family: "Nanum Gothic";
+	src: local("Nanum Gothic"),
+	     url("fonts/NanumGothic/NanumGothic-Bold.woff2") format("woff2"),
+		 url("fonts/NanumGothic/NanumGothic-Bold.woff") format("woff"),
+		 url("fonts/NanumGothic/NanumGothic-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+.nanum-gothic  {
+	font-family: "Nanum Gothic", "맑은 고딕", sans-serif;
+}
+
+/*
+* Noto Sans KR (korean) http://www.google.com/fonts/earlyaccess
+ */
+
+.noto-sans-kr {
+	font-family: 'Noto Sans KR', "맑은 고딕", sans-serif;
+}
+.weight-100 {
+	font-weight: 100;
+}
+.weight-300 {
+	font-weight: 300;
+}
+.weight-400 {
+	font-weight: 400;
+}
+.weight-500 {
+	font-weight: 500;
+}
+.weight-800 {
+	font-weight: 800;
+}

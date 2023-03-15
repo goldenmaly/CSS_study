@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 2em 2em 100vh;
+}
+h1 {
+	text-align: center;
+}
+h2 {
+	background: #d1d1d1;
+	padding: .4em;
+	font-family: consolas, sans-serif;
+	margin-bottom: 1.4em;
+}
+section {
+	border: 3px dashed silver;
+	padding: 20px;
+	margin-bottom: 80px;
+	position: relative;
+	background: cyan;
+	background-clip: content-box;
+}
+section::before {
+	content: attr(class);
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	padding: 10px;
+	background: #666;
+	color: #fff;
+	transform: translateX(-50%);
+}
+div {
+	width: 100px;
+	height: 100px;
+	background: gold;
+	text-align: center;
+	font-size: 40px;
+	line-height: 80px;
+	border: 10px solid red;
+}
+p {
+	margin-bottom: 2em;
+	background: #f2f2f2;
+	padding: .4em;
+}

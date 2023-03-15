@@ -1,0 +1,103 @@
+/* pre-settings */
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 100;
+	src: url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),
+		 url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff');
+}
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Source Code Pro Light'), local('SourceCodePro-Light'), url(https://fonts.gstatic.com/s/sourcecodepro/v6/leqv3v-yTsJNC7nFznSMqTRVvBvQIc1z78c__uoBcyI.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Source Code Pro Light'), local('SourceCodePro-Light'), url(https://fonts.gstatic.com/s/sourcecodepro/v6/leqv3v-yTsJNC7nFznSMqeode0-EuMkY--TSyExeINg.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+body {
+	font-family: 'Noto Sans KR';
+}
+figure {
+	margin: 0 auto 50px;
+	width: 800px;
+}
+figcaption {
+	font-family: 'Source Code Pro';
+	font-weight: 300;
+	line-height: 50px;
+	text-align: center;
+}
+.gradient {
+	width: 300px;
+	height: 300px;
+	background-color: #f2f2f2; /* gradient를 지원하지 않는 브라우저를 위해 */
+	margin: auto;
+	text-align: center;
+}
+.gradient span {
+	line-height: 300px;
+	font-size: 20px;
+	font-weight: 100;
+	color: #000;
+}
+
+/* background-image: linear-gradient(angle, color-stop1, color-stop2);
+ *******************************************************/
+.gradient-1 {
+	background-image: linear-gradient(to bottom, red, blue); /* from top to bottom */
+}
+.gradient-2 {
+	background-image: linear-gradient(to top, red, blue);  /* from bottom to top */
+}
+.gradient-3 {
+	background-image: linear-gradient(to right, red, blue);  /* from left to right */
+}
+.gradient-4 {
+	background-image: linear-gradient(to left, red, blue);   /* from right to left */
+}
+.gradient-5 {
+	background-image: linear-gradient(to bottom, red, blue, yellow);
+}
+.gradient-6 {
+	background-image: linear-gradient(to top, red, blue, yellow, green);
+}
+.gradient-7 {
+	background-image: linear-gradient(-45deg, red, blue);
+}
+.gradient-8 {
+	background-image: linear-gradient(20deg, red, blue);
+}
+
+/* background-image: linear-gradient(angle, color-stop1 radius, color-stop2 radius);
+ * 기본값: linear-gradient(angle, color-stop1 0%, color-stop2 100%);
+ *
+ * 참조: https://www.w3schools.com/colors/colors_gradient.asp
+ *******************************************************/
+
+ /* from top 10%까지 red색이고 10%부터 그라디언트가 시작되어 to bottom 60%까지 그라디언트를 마치고 60%부터 blue */
+.gradient-9 {
+	background-image: linear-gradient(to bottom, red 10%, blue 60%);
+}
+
+/* background-image: radial-gradient(color-stop1, color-stop2);
+ *******************************************************/
+.gradient-10 {
+	background-image: radial-gradient(red, blue);
+}
+.gradient-11 {
+	background-image: radial-gradient(red, blue, yellow);
+}
+
+/* background-image: radial-gradient(color-stop1 radius, color-stop2 radius);
+ * 기본값: radial-gradient-gradient(color-stop1 0%, color-stop2 100%);
+ *******************************************************/
+.gradient-12 {
+	background-image: radial-gradient(red 50%, blue 100%);
+}

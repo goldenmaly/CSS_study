@@ -1,0 +1,10 @@
+.a-1 {
+    background-color: gold;
+    width: 100px;
+    height: 200px;
+}
+.a-2 {
+    background-color: silver;
+    width: 50%; /* 100%는 부모요소 width */
+    height: 50%; /* */
+}

@@ -1,0 +1,15 @@
+li:first-child {
+    color: red;
+}
+li:last-child {
+    color: blue;
+}
+li:first-child:hover {
+    color:brown;
+}
+li:hover:last-child {
+    color: gold;
+}
+li:first-child::selection {
+    color: white;
+}

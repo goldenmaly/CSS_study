@@ -1,0 +1,35 @@
+body {
+    min-width: 380px; /* 협의된 가장 작은 device */
+}
+div {
+    max-width: 800px;
+    /*
+        : max-width를 선언하지 않은 상태는 width를 선언하지 않았기 때문에 기본값 auto기 때문에 브라우저 사이즈가 max-width 값보다 적어졌을 때는 기본값 적용으로 full이 된다.
+
+        max-width
+        min-width
+        max-height
+        min-height
+    */
+    height: 800px;
+    background-color: gold;
+    margin: 0 auto; /* 위아래 좌우 */
+}
+@media (max-width: 1000px) { 
+    /* 
+        @media query : 'viewport가 최대 1000px너비까지만 밑에 코드를 읽어라'는 의미.
+    */  
+    div {
+        background-color: red;
+    }
+}
+@media (max-width: 700px) { 
+    /* 
+        : design이 바뀌는 지점을 break point라고 한다.
+        : 매우 중요한 사항 : max-width값이 낮은 것을 나중에 선언해야 낮은 값 까지의도한 디자인이 적용되고 그보다 큰 값이 되었을 때 breack point가 정상적으로 적용된다.
+
+    */  
+    div {
+        background-color: green;
+    }
+}

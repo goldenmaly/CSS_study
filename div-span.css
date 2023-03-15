@@ -1,0 +1,37 @@
+div {
+    padding: 15px;
+}
+.ja {
+    background-color: blue;
+}
+.cn {
+    background-color: red;
+}
+.ja h2 {
+    color: pink;
+}
+.ja p {
+    color: white;
+}
+.cn h2 {
+    color: olive;
+}
+.cn p {
+    color: beige;
+}
+.ja h2 strong {
+    background-color: black;
+}
+.cn h2 strong {
+    background-color: silver;
+}
+.ja span {
+    background-color: green;
+}
+.cn:hover h2 strong {
+    background-color: yellow;
+}
+::selection {
+    color: white;
+    background-color: gold;
+}

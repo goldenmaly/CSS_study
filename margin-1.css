@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.container {
+    width: 1000px;
+    height: 2000px;
+    border: 10px solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    background-color: gold;
+    width: 500px; /* 적용대상이 아님 */
+    height: 500px; /* 적용대상이 아님 */
+    margin-left: 50px;
+    margin-top: 100px; /* 적용대상이 아님 */
+}
+button { /* inline 요소는 한 줄로 이어지도록 동시에 margin이 적용되서 한 줄 상태를 유지하려고 한다. */
+    margin: 50px;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: silver;
+    border: 2px solid green;
+    text-align: center;
+}
+.box-1 { 
+    /* 
+        : margin은 음수값이 존재함
+        : 밀기도하고 끌어당기기도 함 
+    */
+    margin-left: -50px;
+    margin-bottom: 50px;
+}
+.box-2 {
+    margin-top: 70px;
+    border-top-color: gold;
+}
+/*
+    margin 겹침 현상(상쇄현상, margin collapsing)
+    : 줄바꿈하는 요소들 중에서 형제요소의 margin-top과 margin-bottom이 있을 겨우 겹치게 되면서 그 중 큰 값만 적용되고, 나머지 값은 적용되지 않는 현상을 말함.
+    : display: flex;의 자식요소에서는 이러한 현상이 발생하지 않음
+*/
+.box-3 {
+    margin-left: auto;
+}

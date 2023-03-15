@@ -1,0 +1,82 @@
+/* pre-settings */
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 100;
+	src: url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),
+		 url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff');
+}
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Source Code Pro Light'), local('SourceCodePro-Light'), url(https://fonts.gstatic.com/s/sourcecodepro/v6/leqv3v-yTsJNC7nFznSMqTRVvBvQIc1z78c__uoBcyI.woff2) format('woff2');
+	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Source Code Pro Light'), local('SourceCodePro-Light'), url(https://fonts.gstatic.com/s/sourcecodepro/v6/leqv3v-yTsJNC7nFznSMqeode0-EuMkY--TSyExeINg.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+body {
+	font-family: 'Noto Sans KR';
+}
+figure {
+	margin: 0 auto 50px;
+	width: 600px;
+}
+figcaption {
+	font-family: 'Source Code Pro';
+	font-weight: 300;
+	line-height: 50px;
+	text-align: center;
+}
+.radius {
+	width: 300px;
+	height: 300px;
+	background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+	border: 1px solid #d57eeb;
+	margin: auto;
+	text-align: center;
+}
+.radius span {
+	line-height: 300px;
+	font-size: 20px;
+	font-weight: 100;
+	color: #fff;
+}
+
+/* border-radius */
+.radius-1 {
+	border-radius: 50%;
+}
+.radius-2 {
+	border-radius: 100px 20px;
+}
+.radius-3 {
+	border-radius: 100px 10px 50px;
+}
+.radius-4 {
+	border-radius: 10px 50px 100px 150px;
+}
+.radius-5 {
+	border-top-right-radius: 100px;
+}
+.radius-6 {
+	border-bottom-left-radius: 100px;
+}
+.radius-7 {
+	border-bottom-right-radius: 150px 50px;
+}
+.radius-8 {
+	border-bottom-right-radius: 50px 150px;
+}
+.radius-9 {
+	border-top-left-radius: 150px 50px;
+}
+.radius-10 {
+	border-top-left-radius: 50px 150px;
+}

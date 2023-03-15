@@ -1,0 +1,18 @@
+[type="text"]:focus {
+    border: 1px solid red;
+    background-color: gold;
+    outline: none;
+}
+.a11y {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.a11y:focus {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,44 @@
+h1 {
+    /*
+    :글꼴이름1,2,3 이어나갈때는 없으면 다음에 나열한 것으로 됌.
+    :글꼴이름 나열한 후에 맨 마지막에 글꼴디자인을 적는다.
+    */
+    font-family: 글꼴이름;
+    font-family: 글꼴디자인 계열;
+    font-family: 글꼴이름1, 글꼴이름2, 글꼴이름3....;
+    font-family: 글꼴이름1, 글꼴이름2, 글꼴이름3, serif;
+    font-family: "바탕체"; /* 혹은 '바탕체';  */
+    font-family: "arial bold"; /* 혹은 'arial bold'; 홑,쌍따옴표 하지 않는다.
+    대소문자 구분도 없다.
+    띄어쓰기가 있으면 따옴표를 쓴다. */
+}
+.a-2 {
+    font-family: "굴림";
+}
+.a-3 {
+    font-family: gulim;
+}
+.a-4 {
+    font-family: serif;
+}
+.a-5 {
+    font-family: "malfun gothic", sans-serif;
+    /*
+    맑은 고딕이 없을시 sans-serif로 하겠다는 의미
+    */
+}
+.a-6 {
+    font-family: monospace;
+}
+.a-7 {
+    font-family: "돋움체";
+}
+.a-8 {
+    font-family: dotumche;
+}
+.a-9 {
+    font-family: arial, monospace;
+}
+.a-10 {
+    font-family: gungsuh;
+}

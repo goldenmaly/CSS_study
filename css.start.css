@@ -1,0 +1,35 @@
+/* css.start.css*/
+
+/*
+ 디자인할요소{디자인할것:디자인할값;}
+ selector{property:value;} 
+ 선택자{속성:값;}
+*/
+h1 {
+    color: red;
+    background-color: rgb(120, 49, 129);
+}
+h2 {
+    color: gold;
+    background-color: darkred;
+}
+h3 {
+    color: aqua;
+    background-color: green;
+}
+h4 {
+    color: red;
+    background-color: blueviolet;
+}
+h5 {
+    color: orange;
+    background-color: blue;
+}
+h6 {
+    color: beige;
+    background-color: pink;
+}
+p {
+    color: gold;
+    background-color: silver;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Flexbox의 이해 실습</title>
+		<link rel="stylesheet" href="built-in.css">
+		<link rel="stylesheet" href="test.css">
+	</head>
+	<body>
+		<h1>Flexbox의 이해</h1>
+		<h2>기본 Box</h2>
+		<section class="section-1">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+		</section>
+		<h2>.section-2 { display: flex; }</h2>
+		<section class="section-2">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+		</section>
+		<h2>.section-3 { display: flex; justify-content: center; } /* 기본값=> justify-content: flex-start; */</h2>
+		<section class="section-3">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+		</section>
+		<h2>.section-4 { display: flex; justify-content: flex-end; }</h2>
+		<section class="section-4">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+		</section>
+		<h2>.section-5 { display: flex; justify-content: space-between; }</h2>
+		<section class="section-5">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+		</section>
+		<h2>.section-6 { display: flex; justify-content: space-arround; }</h2>
+		<p>
+			space-around는 시작선 및 끝선과 flex 항목간 공간도 균등 배분에 고려하므로 시작선 및 끝선과 flex 항목 간의 공간의 크기를 1로 배분한다면 flex 항목 사이의 공간은 2로 배분합니다.
+		</p>
+		<section class="section-6">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+		</section>
+		<h2>.section-7 { display: flex; justify-content: space-evenly; }</h2>
+		<p>
+			space-evenly로 지정하면 여유 공간을 flex 항목 사이의 공간 및 시작선 및 끝선과 flex 항목 간의 공간에 모두 균등하게 배분합니다.
+		</p>
+		<section class="section-7">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+		</section>
+		<h2>.section-8 { display: flex; height: 300px; align-items: center } /* 기본값=> align-items: stretch */</h2>
+		<section class="section-8">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</section>
+		<h2>.section-9 { display: flex; height: 300px; align-items: stretch; } .section-9 div { height: auto; }</h2>
+		<p>
+			align-items: stretch로 지정할 경우 flex 항목의 height가 auto일 경우 flex container의 높이만큼 늘어납니다. 만약 flex 항목의 height가 명시적으로 지정되어 있으면 지정된 값으로 표현됩니다.
+		</p>
+		<section class="section-9">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</section>
+		<h2>.section-10 { display: flex; height: 300px; align-items: stretch } .section-10 div { height: auto; } .section-10 .box-1 { height: 170px; }</h2>
+		<section class="section-10">
+			<div class="box-1">box-1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</section>
+		<h2>.section-11 { display: flex; height: 300px; align-items: flex-end }</h2>
+		<section class="section-11">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</section>
+		<h2>.section-12 { display: flex; flex-direction: column; }</h2>
+		<section class="section-12">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</section>
+		<h2>.section-13 { display: flex; flex-direction: column; align-items: center; }</h2>
+		<section class="section-13">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</section>
+		<h2>.section-14 { display: flex; flex-direction: column; align-items: flex-start; }</h2>
+		<section class="section-14">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</section>
+		<h2>.section-15 { display: flex; flex-direction: column; align-items: stretch; } .section-15 div { width: auto; }</h2>
+		<section class="section-15">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</section>
+		<h2>.section-17 { display: flex; height: 2000px; flex-direction: column; justify-content: center; }</h2>
+		<section class="section-16">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</section>
+		<h2>.section-17 { display: flex; height: 2000px; flex-direction: column; justify-content: flex-end; }</h2>
+		<section class="section-17">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</section>
+		<h2>.section-18 { display: flex; height: 500px; justify-content: center; align-items: center; }</h2>
+		<section class="section-18">
+			<div>1</div>
+		</section>
+		<h2>.section-19 { display: flex; height: 500px; flex-direction: column; justify-content: center; align-items: center; }</h2>
+		<section class="section-19">
+			<div>1</div>
+		</section>
+		<h2>.section-20 { display: flex; width: 500px; } .section-20 div { width: 200px; }</h2>
+		<section class="section-20">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</section>
+		<h2>.section-21 { display: flex; width: 500px; } .section-21 div { width: 100px; flex-shrink: 1;} <a href="https://developer.mozilla.org/ko/docs/Web/CSS/flex-shrink" target="_blank">flex-shrink 참조</a></h2>
+		<p>
+			flex-shrink, flex-grow, flex-basis, flex(flex-shrink, flex-grow, flex-basis를 한 번에 적는 단축 프라퍼티임) 모두 알아야 합니다.  <a href="https://developer.mozilla.org/ko/docs/Web/CSS/flex" target="_blank"><strong>flex 참조</strong></a>
+		</p>
+		<section class="section-21">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</section>
+		<h2>.section-22 { display: flex; width: 500px; flex-wrap: wrap; } /* 기본값=> flex-wrap: nowrap; */ .section-22 div { width: 100px; }</h2>
+		<p>
+			flex container에 flex-wrap이 wrap으로 설정되어 있으면 flex 항목에 flex-shrink이 0으로 설정되어 있지 않더라도 flex항목이 줄어들지 않습니다.
+		</p>
+		<section class="section-22">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</section>
+	</body>
+</html>

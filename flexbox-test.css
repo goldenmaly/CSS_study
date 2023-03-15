@@ -1,0 +1,40 @@
+.section-1 {
+    display: flex;
+}
+.section-2 {
+    display: flex;
+    justify-content: center;
+}
+.section-3 {
+    display: flex;
+    justify-content: flex-end;
+}
+.section-4 {
+    display:  flex;
+    justify-content: space-between;
+}
+.section-9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.section-10 {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    align-items: flex-end;
+}
+.section-11 {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    align-items: stretch; 
+    /* 기본값이 stretch */
+}
+.section-11 div {
+    height: auto;
+}
+.section-11 div:first-child {
+    height: 200px;
+}

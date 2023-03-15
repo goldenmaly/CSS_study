@@ -1,0 +1,108 @@
+.a-1 {
+    border: 1px solid red;
+}
+.a-2 {
+    border: 5px solid blue;
+}
+.a-3 {
+    border: 4px dashed green;
+}
+.a-4 {
+    border: 10px dotted olive;
+}
+.a-5 { /* value의 순서는 상관무 */
+    border: solid red 10px;
+}
+.a-6 {
+    border: 1px solid red;
+    /*
+        border-width: 1px;
+        border-style: solid;
+        border-color: red;
+        => 단축(shorthand)속성(property)
+    */
+}
+/*
+    border-width의 기본값 : thin(얇은 선)
+*/
+.a-7 {
+    border: solid red;
+    /*
+        border-width: thin이 적용되어있다.
+    */
+}
+.a-8 {
+    border: solid;
+}
+.a-8:hover {
+    color: green;
+}
+/*
+    border-color의 기본값: 현재 글자색
+*/
+/*
+    border-style의 기본값: none;
+    solid/ dashed/ dotted/ 기타 등등 
+*/
+.a-9 {
+    border: 5px red;
+}
+/*
+    border-style의 값을 설정하지 않으면 브라우저에 적용되지 않는다.
+*/
+.a-10 {
+    border: 5px solid transparent;
+     /*
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent;
+    */
+}
+.a-10:hover {
+    border-color: green;
+    text-decoration: overline;
+    text-decoration-color: gold;
+    /*
+    border: 5px solid green;
+    => 위에 선언된 border property의 기본값 때문에 border-style과 border-width를 선언하지 않아도 된다.
+    */
+}
+.a-11 {
+    border-top: 10px solid blue;
+    border-bottom: 5px dashed green;
+    border-left: 7px dotted #f0f;
+    border-right: 15px solid #a3d;
+}
+.a-11::selection {
+    color: gold;
+    text-decoration: line-through;
+}
+.a-12 {
+    /* border-top: 10px solid red; */
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-top-color: red;
+}
+.a-12:hover {
+    border-top-color:#a3d
+}
+.a-13 {
+    border: 10px solid red;
+}
+.a-13:hover {
+    border-left-color: green;
+}
+.a-14 {
+    border: 10px solid #c31;
+}
+.a-14:hover {
+    border-right: none;
+    /* border-right-style: none; */
+}
+.a-15 {
+    border:  10px solid gold;
+}
+.a-15:hover {
+    border-right: 0;
+    /* border-right-width: 0; */
+}

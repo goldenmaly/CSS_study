@@ -1,0 +1,19 @@
+h1::before {    
+    content: "#";
+    color: red;
+    background-color: blue;
+}
+h1::after {
+    content: "?";
+}
+.bar::before {
+    content: "";
+    /* ::before ::after의 필수 프로퍼티이다.
+    문자가 들어가야하는 영역에는 '',""가 들어가는데 적지 않으면 값이 없다는 뜻.
+    ''or""까지 적지 않으면 값이 아예 존재하지 않는다는 의미가 된다.*/
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 0.2em;
+}

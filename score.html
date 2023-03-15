@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>선택자의 구체성값</title>
+        <link rel="stylesheet"  href="score.css">
+    </head>
+    <body>
+        <h1 id="user" class="a b c">h1</h1>
+        <h2 class="d">h2</h2>
+        <h3 style="color: yellow !important;" 
+        id="x">h3</h3>
+
+        <!--
+            css를 필수적으로 html문서 내에 style속성이나 style 요소로 선언해야하는 경우는, 보안상의 이유로 js, iframe, link 등을 사용하지 못할 때이다.
+
+            js로 디자인을 수정하면 html에 inline으로 style을 선언되기 때문에 구체성값이 css보다 높아진다. 
+            이런 이유로 css가 적용되지 않는다.
+        -->
+
+    </body>
+</html>

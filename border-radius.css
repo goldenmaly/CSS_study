@@ -1,0 +1,128 @@
+div {
+    background-color: orangered;
+    border: 5px solid gold;
+    margin: 0 auto 25px;
+}
+div:nth-child(odd) {
+    width: 300px;
+    height: 200px;
+}
+div:nth-child(even) {
+    width: 200px;
+    height: 200px;
+}
+.a-1 {
+    border-radius: 50px;
+    box-shadow: 10px 20px blue;
+}
+.a-2 {
+    border-radius: 50%;
+    box-shadow: -10px 20px blue;
+}
+.a-3 {
+    border-radius: 50%;
+    box-shadow: 0 20px green;
+}
+.a-4 { 
+    /* 
+        : border-radius의 value는 50%가 최대이고 그 이상으로 선언하면 논리적으로 실현가능한 만큼만 적용시킨다.
+        : 음수는 불가능 => error 
+    */
+    border-radius: 200%;
+    box-shadow: 5px 20px 10px red;
+    /* 
+        : blur-radius는 00px의 솜방망이로 흐림효과를 준 것.
+        : 커지더라도 레이아웃에 영향을 미치지 않는다.
+        : 음수는 불가능 => error    
+    */
+}
+.a-5 {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 20px;
+    box-shadow: -10px -30px 50px gold;
+}
+.a-6 {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: 5px 5px 14px rgb(128, 21, 21);
+    box-shadow: 5px 5px 17px rgb(128, 21, 21)
+ inset;
+}
+
+.a-7 {
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.a-8 {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+.a-9 {
+    border-top-left-radius: 200px 100px;
+    border-bottom-left-radius: 200px 100px;
+}
+.a-14 {
+    transition: all 0.5s;
+}
+.a-14:hover {
+    border-radius: 50%;
+}
+
+.a-10 {
+    box-shadow: 10px 10px 10px;
+    /*
+        : box-shadow와 border-color의 기본값은 글자색
+    */
+    transition: all .7s;
+}
+.a-10:hover {
+    color: olive;
+    border-radius: 20%;
+}
+
+.a-12 {
+    transition: all .3s;
+}
+.a-12:active {
+    /*
+        : box-shadow의 네 번째 옵션은 spread이다.
+        : 음수 적용 가능하다.
+    */
+    box-shadow: 5px 5px 13px -3px rgb(114, 5, 14), 5px 5px 13px -3px rgb(114, 5, 14) inset;
+    border-top-color: rgba(243, 124, 81,.7);
+    border-left-color: rgba(243, 124, 81,.7);
+    border-right-color: rgb(219, 62, 5);
+    border-bottom-color: rgb(219, 62, 5);
+}
+
+.a-13 {
+    transition: all .5s;
+}
+.a-13:hover {
+    box-shadow: 0 70px 30px -60px rgba(0,0,0,.4);
+}
+.a-14 {
+    box-shadow: 10px 10px red,
+                20px 20px blue,
+                30px 30px green;
+}
+.a-15 {
+    box-shadow: 10px 10px 10px yellow inset;
+    /*
+        : inset keyword는 맨 앞 혹은 맨 뒤에 작성해야함.
+    */
+}
+h1 {
+    margin-bottom: 100px;
+    text-align: center;
+    text-shadow: 0 3px sliver;
+    /*
+        : box-shadow와 모두 동이하지만 spread와 inset옵션이 없다.
+        : 멀티적용이 가능한다.
+    */
+}
